@@ -31,3 +31,34 @@ vals.reverse()
 print('\n')
 for x in vals:
     print(x, end=" ")
+    
+
+'''Inserting element in array'''
+vals.insert(1, 50)
+vals.append(100)
+
+# Overide the element
+# vals[2] = 200
+
+print('\n')
+for x in vals:
+    print(x, end=" ")
+    
+    
+
+'''Copy an array'''
+print('\n')
+copyArray = array.array(vals.typecode, (x**3 for x in vals))
+for i in range(0, len(copyArray)):
+    print(copyArray[i], end=" ")
+    
+    
+'''Delete the element'''
+copyArray.pop(3)
+print('\n')
+for i in range(0, len(copyArray)):
+    print(copyArray[i], end=" ")
+    
+# copyArray.remove(216) Directly removing with the help of value of element
+
+
